@@ -10,7 +10,7 @@ export default function Header({ siteTitle, description }: HeaderProps) {
     <header>
       <Nav />
       <div>
-        <h1>{siteTitle}</h1>
+        <h1 className='text-3xl font-bold'>{siteTitle}</h1>
         <h2>{description}</h2>
       </div>
     </header>
