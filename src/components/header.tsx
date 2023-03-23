@@ -7,10 +7,10 @@ type HeaderProps = {
 
 export default function Header({ siteTitle, description }: HeaderProps) {
   return (
-    <header>
+    <header className='mb-20 flex flex-col text-center items-center'>
       <Nav />
-      <div>
-        <h1 className='text-3xl font-bold'>{siteTitle}</h1>
+      <div className='mt-8 uppercase'>
+        <h1 className='text-5xl font-bold mb-6'>{siteTitle}</h1>
         <h2>{description}</h2>
       </div>
     </header>

@@ -4,5 +4,9 @@ type props = {
 };
 
 export default function IconLink({ href, children }: props) {
-  return <a href={href}>{children}</a>;
+  return (
+    <a className='h-8 w-8' href={href}>
+      {children}
+    </a>
+  );
 }
