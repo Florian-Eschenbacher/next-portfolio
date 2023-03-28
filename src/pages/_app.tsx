@@ -2,12 +2,14 @@ import Layout from '@/components/layout';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
+import { appWithI18Next } from 'ni18n';
+import { ni18nConfig } from '../../ni18n.config';
 
 const inter = Inter({
   subsets: ['latin']
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
@@ -21,3 +23,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+export default appWithI18Next(App, ni18nConfig);
